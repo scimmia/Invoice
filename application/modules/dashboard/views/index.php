@@ -21,14 +21,6 @@
                         <i class="fa fa-file fa-margin"></i>
                         <span class="hidden-xs"><?php echo trans('create_quote'); ?></span>
                     </a>
-                    <a href="javascript:void(0)" class="create-invoice btn btn-default">
-                        <i class="fa fa-file-text fa-margin"></i>
-                        <span class="hidden-xs"><?php echo trans('create_invoice'); ?></span>
-                    </a>
-                    <a href="<?php echo site_url('payments/form'); ?>" class="btn btn-default">
-                        <i class="fa fa-credit-card fa-margin"></i>
-                        <span class="hidden-xs"><?php echo trans('enter_payment'); ?></span>
-                    </a>
                 </div>
 
             </div>

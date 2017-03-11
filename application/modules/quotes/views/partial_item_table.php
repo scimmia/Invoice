@@ -128,7 +128,7 @@
                                title="<?php echo $this->mdl_settings->setting('currency_symbol') . ' ' . trans('per_item'); ?>">
                     </div>
                 </td>
-                <td class="td-amount">
+                <td class="td-amount" style="display: none">
                     <div class="input-group">
                         <span class="input-group-addon"><?php echo trans('tax_rate'); ?></span>
                         <select name="item_tax_rate_id" name="item_tax_rate_id"
@@ -171,7 +171,7 @@
                         <?php echo format_currency($item->item_discount); ?>
                     </span>
                 </td>
-                <td class="td-amount td-vert-middle">
+                <td class="td-amount td-vert-middle" style="display: none">
                     <span><?php echo trans('tax'); ?></span><br/>
                     <span name="item_tax_total" class="amount">
                         <?php echo format_currency($item->item_tax_total); ?>
@@ -193,10 +193,6 @@
 <div class="row">
     <div class="col-xs-12 col-md-4">
         <div class="btn-group">
-            <a href="#" class="btn_add_row btn btn-sm btn-default">
-                <i class="fa fa-plus"></i>
-                <?php echo trans('add_new_row'); ?>
-            </a>
             <a href="#" class="btn_add_product btn btn-sm btn-default">
                 <i class="fa fa-database"></i>
                 <?php echo trans('add_product'); ?>
@@ -206,15 +202,15 @@
     </div>
     <div class="col-xs-12 col-md-6 col-md-offset-2 col-lg-4 col-lg-offset-4">
         <table class="table table-condensed text-right">
-            <tr>
+            <tr style="display: none">
                 <td style="width: 40%;"><?php echo trans('subtotal'); ?></td>
                 <td style="width: 60%;" class="amount"><?php echo format_currency($quote->quote_item_subtotal); ?></td>
             </tr>
-            <tr>
+            <tr style="display: none">
                 <td><?php echo trans('item_tax'); ?></td>
                 <td class="amount"><?php echo format_currency($quote->quote_item_tax_total); ?></td>
             </tr>
-            <tr>
+            <tr style="display: none">
                 <td><?php echo trans('quote_tax'); ?></td>
                 <td>
                     <?php if ($quote_tax_rates) {
@@ -232,7 +228,7 @@
                     } ?>
                 </td>
             </tr>
-            <tr>
+            <tr style="display: none">
                 <td class="td-vert-middle"><?php echo trans('discount'); ?></td>
                 <td class="clearfix">
                     <div class="discount-field">

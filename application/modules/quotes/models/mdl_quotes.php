@@ -121,7 +121,7 @@ class Mdl_Quotes extends Response_Model
             'invoice_group_id' => array(
                 'field' => 'invoice_group_id',
                 'label' => trans('quote_group'),
-                'rules' => 'required'
+                'rules' => ''
             ),
             'quote_password' => array(
                 'field' => 'quote_password',
@@ -256,7 +256,7 @@ class Mdl_Quotes extends Response_Model
         $db_array['notes'] = $this->mdl_settings->setting('default_quote_notes');
 
         if (!isset($db_array['quote_status_id'])) {
-            $db_array['quote_status_id'] = 1;
+            $db_array['quote_status_id'] = 4;
         }
 
         $generate_quote_number = $this->mdl_settings->setting('generate_quote_number_for_draft');
