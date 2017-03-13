@@ -61,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="display: none">
                 <label for="invoice_password"><?php echo trans('invoice_password'); ?></label>
                 <input type="text" name="invoice_password" id="invoice_password" class="form-control"
                        value="<?php if ($this->mdl_settings->setting('invoice_pre_password') == '') {
@@ -71,7 +71,7 @@
                        } ?>" style="margin: 0 auto;" autocomplete="off">
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="display: none">
                 <label for="invoice_group_id">
                     <?php echo trans('invoice_group'); ?>
                 </label>

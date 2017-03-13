@@ -9,7 +9,7 @@
             <th><?php echo trans('price'); ?></th>
             <th><?php echo trans('tax_rate'); ?></th>
             <th><?php echo trans('subtotal'); ?></th>
-            <th><?php echo trans('tax'); ?></th>
+            <th style="display: none"><?php echo trans('tax'); ?></th>
             <th><?php echo trans('total'); ?></th>
             <th></th>
         </tr>
@@ -48,7 +48,7 @@
                            title="<?php echo $this->mdl_settings->setting('currency_symbol') . ' ' . trans('per_item'); ?>">
                 </div>
             </td>
-            <td class="td-amount">
+            <td class="td-amount" style="display: none">
                 <div class="input-group">
                     <span class="input-group-addon"><?php echo trans('tax_rate'); ?></span>
                     <select name="item_tax_rate_id" name="item_tax_rate_id"
@@ -79,7 +79,7 @@
                 <span><?php echo trans('discount'); ?></span><br/>
                 <span name="item_discount_total" class="amount"></span>
             </td>
-            <td class="td-amount td-vert-middle">
+            <td class="td-amount td-vert-middle" style="display: none">
                 <span><?php echo trans('tax'); ?></span><br/>
                 <span name="item_tax_total" class="amount"></span>
             </td>

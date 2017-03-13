@@ -123,6 +123,17 @@
 
     <div class="pull-right btn-group">
 
+
+
+        <a href="#" class="btn_add_product btn btn-sm btn-default">
+            <i class="fa fa-database"></i>
+            <?php echo trans('add_product'); ?>
+        </a>
+
+        <a href="#" class="btn btn-sm btn-success ajax-loader" id="btn_save_quote">
+            <i class="fa fa-check"></i>
+            <?php echo trans('save'); ?>
+        </a>
         <div class="options btn-group pull-left">
             <a class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" href="#">
                 <?php echo trans('options'); ?> <i class="fa fa-chevron-down"></i>
@@ -142,16 +153,6 @@
                 </li>
             </ul>
         </div>
-
-        <a href="#" class="btn_add_product btn btn-sm btn-default">
-            <i class="fa fa-database"></i>
-            <?php echo trans('add_product'); ?>
-        </a>
-
-        <a href="#" class="btn btn-sm btn-success ajax-loader" id="btn_save_quote">
-            <i class="fa fa-check"></i>
-            <?php echo trans('save'); ?>
-        </a>
     </div>
 
 </div>
