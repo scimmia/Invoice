@@ -63,7 +63,7 @@
                     </div>
 
 
-                    <div class="form-group">
+                    <div class="form-group" style="display: none">
                         <label><?php echo trans('mobile_number'); ?>: </label>
 
                         <div class="controls">
