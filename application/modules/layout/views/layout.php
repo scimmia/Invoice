@@ -191,16 +191,8 @@
             <?php } ?>
 
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="http://docs.invoiceplane.com/" target="_blank"
-                       class="tip icon" data-original-title="<?php echo trans('documentation'); ?>"
-                       data-placement="bottom">
-                        <i class="fa fa-question-circle"></i>
-                        <span class="visible-xs">&nbsp;<?php echo trans('documentation'); ?></span>
-                    </a>
-                </li>
 
-                <li class="dropdown">
+                <li class="dropdown" style="display: none">
                     <a href="#" class="tip icon dropdown-toggle" data-toggle="dropdown"
                        data-original-title="<?php echo trans('settings'); ?>"
                        data-placement="bottom">
@@ -208,19 +200,9 @@
                         <span class="visible-xs">&nbsp;<?php echo trans('settings'); ?></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><?php echo anchor('custom_fields/index', trans('custom_fields')); ?></li>
-                        <li><?php echo anchor('email_templates/index', trans('email_templates')); ?></li>
-                        <li><?php echo anchor('invoice_groups/index', trans('invoice_groups')); ?></li>
-                        <li><?php echo anchor('invoices/archive', trans('invoice_archive')); ?></li>
-                        <!-- // temporarily disabled
-                        <li><?php echo anchor('item_lookups/index', trans('item_lookups')); ?></li>
-                        -->
-                        <li><?php echo anchor('payment_methods/index', trans('payment_methods')); ?></li>
-                        <li><?php echo anchor('tax_rates/index', trans('tax_rates')); ?></li>
                         <li><?php echo anchor('users/index', trans('user_accounts')); ?></li>
                         <li class="divider hidden-xs hidden-sm"></li>
                         <li><?php echo anchor('settings', trans('system_settings')); ?></li>
-                        <li><?php echo anchor('import', trans('import_data')); ?></li>
                     </ul>
                 </li>
                 <li>

@@ -123,36 +123,14 @@
 
     <div class="pull-right btn-group">
 
-
-
-        <a href="#" class="btn_add_product btn btn-sm btn-default">
-            <i class="fa fa-database"></i>
-            <?php echo trans('add_product'); ?>
-        </a>
-
         <a href="#" class="btn btn-sm btn-success ajax-loader" id="btn_save_quote">
             <i class="fa fa-check"></i>
             <?php echo trans('save'); ?>
         </a>
-        <div class="options btn-group pull-left">
-            <a class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" href="#">
-                <?php echo trans('options'); ?> <i class="fa fa-chevron-down"></i>
-            </a>
-            <ul class="dropdown-menu">
-                <li>
-                    <a href="#" id="btn_quote_to_invoice"
-                       data-quote-id="<?php echo $quote_id; ?>">
-                        <i class="fa fa-refresh fa-margin"></i>
-                        <?php echo trans('quote_to_invoice'); ?>
-                    </a>
-                </li>
-                <li>
-                    <a href="#delete-quote" data-toggle="modal">
-                        <i class="fa fa-trash-o fa-margin"></i> <?php echo trans('delete'); ?>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <a href="#delete-quote" data-toggle="modal" class="btn btn-sm btn-danger">
+            <i class="fa fa-trash-o"></i>
+            <?php echo trans('delete'); ?>
+        </a>
     </div>
 
 </div>

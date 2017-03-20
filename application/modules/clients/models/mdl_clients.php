@@ -132,7 +132,8 @@ class Mdl_Clients extends Response_Model
 
     public function with_total()
     {
-        $this->filter_select('IFnull((SELECT SUM(invoice_total) FROM ip_invoice_amounts WHERE invoice_id IN (SELECT invoice_id FROM ip_invoices WHERE ip_invoices.client_id = ip_clients.client_id)), 0) AS client_invoice_total', false);
+        $this->filter_select('IFnull((SELECT SUM(quote_total) FROM ip_quote_amounts WHERE quote_id IN (SELECT quote_id FROM ip_quotes WHERE ip_quotes.client_id = ip_clients.client_id)),0)  AS client_invoice_total', false);
+//        $this->filter_select('IFnull((SELECT SUM(invoice_total) FROM ip_invoice_amounts WHERE invoice_id IN (SELECT invoice_id FROM ip_invoices WHERE ip_invoices.client_id = ip_clients.client_id)), 0) AS client_invoice_total', false);
         return $this;
     }
 
